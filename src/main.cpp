@@ -36,12 +36,8 @@ void setup()
     ledcAttachPin(roda2, canalRoda2);
 }
 
-void loop()
-{
-    if (Ps3.isConnected())
-    {
-
-        int gatilhoR2 = Ps3.data.analog.button.r2;
+void movimento(){
+    int gatilhoR2 = Ps3.data.analog.button.r2;
         int gatilhoL2 = Ps3.data.analog.button.l2;
 
         int analogicoEsquerdo = Ps3.data.analog.stick.lx;
@@ -85,5 +81,12 @@ void loop()
             digitalWrite(rele1, LOW);
             digitalWrite(rele2, LOW);
         }
+}
+
+void loop()
+{
+    if (Ps3.isConnected())
+    {
+        movimento();
     }
 }
