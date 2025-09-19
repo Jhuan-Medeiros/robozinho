@@ -9,4 +9,6 @@ A minha ideia foi criar um simples motorzinho para ter uma introdução à robô
 ### Linguagem e bibliotecas utilizadas:
 
 ```C++```
-```https://github.com/jvpernis/esp32-ps3```
+[Controle do JVPernis](https://github.com/jvpernis/esp32-ps3)
+
+*Foi utilizado a extensão **PlatformIO** no VSCode para o projeto.*
